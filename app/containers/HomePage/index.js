@@ -1,3 +1,4 @@
+/* eslint-disable import/no-useless-path-segments */
 /*
  * HomePage
  *
@@ -8,11 +9,13 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
-
+import Count from './../../components/Count';
 export default function HomePage() {
   return (
     <h1>
       <FormattedMessage {...messages.header} />
-    </h1>
+      <Count />
+   
+ </h1>
   );
 }
